@@ -1,41 +1,28 @@
 public class Turma {
-    //artibutos
-    private String nome;
-    private String curso; 
-    private int quantidadeDeAlunos;
-    private int serie;
-   
-    //método construtor
-    public Turma (String n, String c, int q, int s) {
-      nome= n;
-      curso= c;
-      quantidadeDeAlunos= q;
-      serie= s;
-    }
-    //métodos de acesso
-    public String getNome() {
-       return nome;
-   }   
-    public String getCurso() {
-       return curso;
+     //atributos
+     private String codigo;
+     private int ano;
+     //construtor
+     public Turma(String codigo, int ano) {
+     this.codigo = codigo;
+     this.ano = ano;
+     }
+     //metodos de acesso
+     public String getCodigo() {
+     return codigo;
+     }
+     public int getAno() {
+     return ano;
+     }
+     //metodos modificadores
+     public void setCodigo(String codigo) {
+     this.codigo = codigo;
+     }
+     public void setAno(int ano) {
+     this.ano = ano;
+     }
+     //metodo getDados
+     public String getDados() {
+     return "Turma [codigo=" + codigo + ", ano=" + ano + "]";
    }
-    public int getQuantidadedealunos() {
-       return quantidadeDeAlunos;
-   }
-    public int getSerie() {
-       return serie;
-   }
-    //métodos modificadores
-    public void setNome(String n) {
-       nome= n;
-   }
-    public void setCurso(String c) {
-       curso= c;
-   }
-    public void setQuantidadedealunos(int q) {
-       quantidadeDeAlunos= q;
-   }
-    public void setSerie(int s) {
-       serie = s;
-   }  
 }
